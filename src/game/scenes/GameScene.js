@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
 import { EventBus, Events } from '../EventBus.js'
-import { generateMaze, getRandomEmptyCell, gridToWorld } from '../systems/MazeGenerator.js'
+import { generateMaze, getRandomEmptyCell, gridToWorld, carveTopLeftNamePath, getTopLeftNamePathCells, NAME_PATH_ROW } from '../systems/MazeGenerator.js'
 import { getLevelConfig } from '../data/levels.js'
 import { ScoreManager, ScoreValues } from '../systems/ScoreManager.js'
 import { soundManager } from '../systems/SoundManager.js'
@@ -41,12 +41,15 @@ export default class GameScene extends Phaser.Scene {
     this.config = config
 
     const { grid, cols, rows } = generateMaze(config.width, config.height, config.loopRemoval)
+    this.namePathLength = carveTopLeftNamePath(grid)
     this.grid = grid
     this.mazeWidth = cols * this.tileSize
     this.mazeHeight = rows * this.tileSize
 
     this.buildMaze()
     this.setupFog()
+    this.markNamePathExplored()
+    this.buildNameSign()
     this.spawnEntities()
     this.setupShieldAura()
     this.setupCamera()
@@ -81,15 +84,71 @@ export default class GameScene extends Phaser.Scene {
 
   buildMaze() {
     this.mazeGroup = this.add.group()
+    this.namePathFloorTiles = []
     for (let y = 0; y < this.grid.length; y++) {
       for (let x = 0; x < this.grid[0].length; x++) {
         const key = this.grid[y][x] === 1 ? 'wall' : 'floor'
         const tile = this.add.image(x * this.tileSize + this.tileSize / 2, y * this.tileSize + this.tileSize / 2, key)
         tile.setDepth(0)
         this.mazeGroup.add(tile)
+        const onNamePath = y === NAME_PATH_ROW && x >= 1 && x < 1 + this.namePathLength
+        if (onNamePath) this.namePathFloorTiles.push(tile)
       }
     }
     this.physics.world.setBounds(0, 0, this.mazeWidth, this.mazeHeight)
+  }
+
+  markNamePathExplored() {
+    getTopLeftNamePathCells(this.namePathLength).forEach(({ x, y }) => {
+      this.explored[y][x] = true
+    })
+  }
+
+  buildNameSign() {
+    const len = this.namePathLength
+    const width = len * this.tileSize
+    const height = this.tileSize
+    const originX = this.tileSize
+    const originY = NAME_PATH_ROW * this.tileSize
+
+    const sign = this.add.renderTexture(originX, originY, width, height)
+      .setOrigin(0, 0)
+      .setDepth(0)
+
+    for (let i = 0; i < len; i++) {
+      sign.draw('floor', i * this.tileSize + this.tileSize / 2, this.tileSize / 2)
+    }
+
+    const name = 'Muhammed Asaf Caner'
+    const shadow = this.make.text({
+      x: 0,
+      y: 0,
+      text: name,
+      style: {
+        fontFamily: '"Press Start 2P"',
+        fontSize: '5px',
+        color: '#1e1e2e',
+      },
+    }, false)
+    shadow.setOrigin(0.5)
+    sign.draw(shadow, width / 2 + 1, this.tileSize / 2 + 1)
+    shadow.destroy()
+
+    const label = this.make.text({
+      x: 0,
+      y: 0,
+      text: name,
+      style: {
+        fontFamily: '"Press Start 2P"',
+        fontSize: '5px',
+        color: '#5a5a72',
+      },
+    }, false)
+    label.setOrigin(0.5)
+    sign.draw(label, width / 2, this.tileSize / 2)
+    label.destroy()
+
+    this.namePathFloorTiles.forEach((tile) => tile.setVisible(false))
   }
 
   setupFog() {
@@ -160,7 +219,7 @@ export default class GameScene extends Phaser.Scene {
   }
 
   spawnEntities() {
-    const occupied = []
+    const occupied = getTopLeftNamePathCells(this.namePathLength)
     const playerCell = getRandomEmptyCell(this.grid, occupied)
     occupied.push(playerCell)
     const playerPos = gridToWorld(playerCell.x, playerCell.y, this.tileSize)

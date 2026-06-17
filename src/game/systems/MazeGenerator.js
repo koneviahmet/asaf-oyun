@@ -152,3 +152,23 @@ export function isWalkable(grid, gx, gy) {
   if (gy < 0 || gy >= grid.length || gx < 0 || gx >= grid[0].length) return false
   return grid[gy][gx] === 0
 }
+
+export const NAME_PATH_ROW = 1
+export const NAME_PATH_LENGTH = 12
+
+export function carveTopLeftNamePath(grid) {
+  const cols = grid[0].length
+  const length = Math.min(NAME_PATH_LENGTH, cols - 2)
+  for (let x = 1; x < 1 + length; x++) {
+    grid[NAME_PATH_ROW][x] = 0
+  }
+  return length
+}
+
+export function getTopLeftNamePathCells(length = NAME_PATH_LENGTH) {
+  const cells = []
+  for (let x = 1; x < 1 + length; x++) {
+    cells.push({ x, y: NAME_PATH_ROW })
+  }
+  return cells
+}
