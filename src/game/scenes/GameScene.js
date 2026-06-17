@@ -119,7 +119,7 @@ export default class GameScene extends Phaser.Scene {
       sign.draw('floor', i * this.tileSize + this.tileSize / 2, this.tileSize / 2)
     }
 
-    const name = 'Muhammed Asaf Caner'
+    const name = 'Asaf'
     const shadow = this.make.text({
       x: 0,
       y: 0,
