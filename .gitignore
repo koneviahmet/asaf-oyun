@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite
+.vite/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+.firebaserc
+
+# Firebase
+firebase-debug.log
+firebase-debug.*.log
+.firebase/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Local overrides
+*.local

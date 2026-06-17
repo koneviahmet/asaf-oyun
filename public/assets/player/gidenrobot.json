@@ -1,0 +1,446 @@
+{
+  "animations" : {
+    "geri giden robot" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "robot_04.png",
+        "robot_03.png",
+        "robot_02.png",
+        "robot_01.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "geri giden robot"
+    },
+    "sağa giden robot" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "robot_08.png",
+        "robot_07.png",
+        "robot_06.png",
+        "robot_05.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "sağa giden robot"
+    },
+    "sola giden robot" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "robot_12.png",
+        "robot_11.png",
+        "robot_10.png",
+        "robot_09.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "sola giden robot"
+    }
+  },
+  "frames" : {
+    "robot_01.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_02.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_03.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_04.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_05.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_06.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "tags" : [
+        "robot"
+      ],
+      "trimmed" : false
+    },
+    "robot_07.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_08.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_09.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_10.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_11.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_12.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_13.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_14.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "tags" : [
+        "machine"
+      ],
+      "trimmed" : false
+    },
+    "robot_15.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "robot_16.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    }
+  },
+  "meta" : {
+    "app" : "SpriteSheet Creator",
+    "format" : "RGBA8888",
+    "image" : "gidenrobot.png",
+    "scale" : "1",
+    "size" : {
+      "h" : 272,
+      "w" : 272
+    },
+    "version" : "2.0.0"
+  }
+}

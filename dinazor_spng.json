@@ -1,0 +1,468 @@
+{
+  "animations" : {
+    "geri_gelen_dinazor" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "dinazor_16.png",
+        "dinazor_15.png",
+        "dinazor_14.png",
+        "dinazor_13.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "geri_gelen_dinazor",
+      "tags" : [
+        "geri_gelen_dinazor"
+      ]
+    },
+    "ileri_giden_dinazor" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "dinazor_04.png",
+        "dinazor_03.png",
+        "dinazor_02.png",
+        "dinazor_01.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "ileri_giden_dinazor",
+      "tags" : [
+        "ileri_giden_dinazor"
+      ]
+    },
+    "saga_giden_dinazor" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "dinazor_08.png",
+        "dinazor_07.png",
+        "dinazor_06.png",
+        "dinazor_05.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "saga_giden_dinazor",
+      "tags" : [
+        "saga_giden_dinazor"
+      ]
+    },
+    "sola_giden_dinazor" : {
+      "durationSeconds" : 0.3333333333333333,
+      "fps" : 12,
+      "frameCount" : 4,
+      "frames" : [
+        "dinazor_12.png",
+        "dinazor_11.png",
+        "dinazor_10.png",
+        "dinazor_09.png"
+      ],
+      "loopMode" : "loop",
+      "name" : "sola_giden_dinazor",
+      "tags" : [
+        "sola_giden_dinazor"
+      ]
+    }
+  },
+  "frames" : {
+    "dinazor_01.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_02.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_03.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_04.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 70
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_05.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_06.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_07.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_08.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 138
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_09.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_10.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_11.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "tags" : [
+        "dinazor"
+      ],
+      "trimmed" : false
+    },
+    "dinazor_12.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 206
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_13.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 206,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_14.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 138,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_15.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 70,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    },
+    "dinazor_16.png" : {
+      "frame" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 2,
+        "y" : 2
+      },
+      "pivot" : {
+        "x" : 0.5,
+        "y" : 0.5
+      },
+      "rotated" : false,
+      "sourceSize" : {
+        "h" : 64,
+        "w" : 64
+      },
+      "spriteSourceSize" : {
+        "h" : 64,
+        "w" : 64,
+        "x" : 0,
+        "y" : 0
+      },
+      "trimmed" : false
+    }
+  },
+  "meta" : {
+    "app" : "SpriteSheet Creator",
+    "format" : "RGBA8888",
+    "image" : "dinazor_spng.png",
+    "scale" : "1",
+    "size" : {
+      "h" : 272,
+      "w" : 272
+    },
+    "version" : "2.0.0"
+  }
+}
